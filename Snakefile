@@ -4,7 +4,7 @@ rule all:
 
 rule download_data:
     conda: "env-wget.yml"
-    output: "{sample}.fastq.gz"
+    output: "SRR2584857_1.fastq.gz"
     shell: """
         wget https://osf.io/4rdza/download -O {output}
     """
